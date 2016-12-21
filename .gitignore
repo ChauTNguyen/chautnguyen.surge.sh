@@ -1,0 +1,6 @@
+node_modules
+DS_Store
+pre-build
+dist
+npm-debug.log
+lib
