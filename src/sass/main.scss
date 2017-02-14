@@ -1,11 +1,12 @@
 @import 'variables';
 html {
     width: 100%;
-    height: 100%;
+    position: relative;
     overflow-x: hidden;
     line-height: 1.6;
     font-family: $main-font;
-    font-size: 1.2rem;
+    font-size: 16px;
+    background-color: $bg-color;
     color: $font-color;
 }
 
@@ -19,7 +20,7 @@ html {
 }
 
 .fade-in {
-    animation: fadeIn 1.5s;
+    animation: fadeIn 0.75s;
 }
 
 a,
@@ -33,7 +34,8 @@ a:visited {
 
 a:hover,
 #copy-email:hover {
-    color: black;
+    color: $yellow;
+    animation: 2s flash infinite;
 }
 
 #main-wrapper {
@@ -44,12 +46,37 @@ a:hover,
 }
 
 #main-wrapper-content {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-.about {
+#name {
+    color: $yellow;
+}
+
+.content-wrapper {
     margin-bottom: 0;
+}
+
+.light-red {
+    color: $light-red;
+}
+
+.yellow {
+    color: $yellow;
+}
+
+.red {
+    color: $red;
+}
+
+.bold-italic {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.website-skills {
+    padding-left: 25px;
 }
 
 #contact-me {
@@ -74,6 +101,111 @@ a:hover,
 
 .social-media-link {
     display: block;
+}
+
+#projects {
+    position: fixed;
+    top: -100%;
+    width: 100vw;
+    height: 100%;
+    z-index: 10000;
+    transition: 1.5s;
+    transform: translate(0, 0);
+    overflow: scroll;
+}
+
+#show-projects #projects {
+    transition: 1.5s;
+    transform: translate(0, 100%);
+}
+
+#show-projects {
+}
+
+
+#projects-strat {
+    min-height: 100%;
+    background-color: white;
+}
+
+#projects-container {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#show-projects #main-wrapper {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.projects-row {
+    // display: flex;
+    // flex-wrap: wrap;
+}
+
+#close-curtains {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border: 1px dashed black;    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1000000;
+}
+
+.project {
+    border: 0.5px dashed;
+    padding: 1em;
+    margin: 2em;
+}
+
+.project-col {
+    flex: 1;
+}
+
+.project-title {
+    color: $alizarin;
+}
+
+.project-desc {
+
+}
+
+.project-permalink {
+    color: $alizarin;
+    text-decoration: none;
+}
+
+.project-permalink:hover {
+    text-decoration: underline;
+    color: $alizarin;
+}
+
+.project-permalink:visited {
+    color: $alizarin;
+}
+
+.flash {
+    animation: 2s flash infinite;
+}
+
+@keyframes flash {
+  0% {
+    text-shadow: 0px 0px 5px #cacacc;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0px 0px 5px #cacacc;
+  }
 }
 
 @media only screen and (min-width: 768px) {

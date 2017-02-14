@@ -10,23 +10,42 @@ html(lang="en")
 
         title Chau | Home
 
+        link(rel='icon' href='favicon.ico' type='image/x-icon')
+
         link(inline rel='stylesheet' href='lib/fira-custom.css')
         link(inline rel='stylesheet' href='lib/normalize.min.css')
         link(inline rel='stylesheet' href='css/main.css')
     body
+        #projects
+                div(id='close-curtains')
+                #projects-strat
+                    ul(id='projects-container')
         #main-wrapper.fade-in
             #main-wrapper-content
-                p(class='about').
-                    Chau Nguyen<br><br>I'm currently a third year Computer Science major at Orange Coast (community) College, and I will be transferring to a university in the fall of 2017.<br><br>I enjoy creating both (web)sites and web applications. I have a minor obsession with site sizes. When working on a site, I strive to make it as lightweight as possible for mobile users. I occasionally find myself recreating other peoples' sites to see if I can create lighter versions of them while keeping the feel and look intact. I also obsess over creating sites that are properly responsive on every platform & orientation, such as #[a(href='http://50years.rudolfheltzel.surge.sh/' target='_blank') this].<br><br>My favorite languages are Python, JavaScript (ES5/ES6), HTML, and CSS. I love functional programming, algorithms, and data structures despite the fact that I suck at them. Also a coffee lover.<br><br>You can find my current portfolio site #[a(href='https://cnguyen.herokuapp.com/portfolio/' target='_blank') here], and many of my older projects (that I have yet to migrate).<br><br>
+                h1(id='name' class='flash') Chau Nguyen
+                .content-wrapper
+                    p.
+                        3rd year #[span(class='yellow') CS] major @ OCC #[span(class='yellow') &#8658] Uni Fall 2017<br><br>#[span(class='light-red') Python], #[span(class='light-red') JavaScript], & #[span(class='light-red') coffee] lover.<br><br>
+                        Currently, I like making & recreating websites that are:
+                    ul(class='website-skills')
+                        li(class='website-skills-item') #[span(class='red bold-italic') responsive] on every platform, screen size, & orientation
+                        li(class='website-skills-item') #[span(class='red bold-italic') interactive], #[span(class='red bold-italic') unobtrusive], & #[span(class='red bold-italic') transparent] UX
+                        li(class='website-skills-item') #[span(class='red bold-italic') lightweight] and loads #[span(class='red bold-italic') fast] on all devices
+                    p.
+                        such as #[a(href='http://50years.rudolfheltzel.surge.sh/' target='_blank') this] and #[a(href='http://touche-test.surge.sh/' target='_blank') this]. #[a(href='https://github.com/ChauTNguyen/Front-End-Projects' target='_blank') All my front-end projects can be found here].<br><br>You can also visit my #[a(href='https://cnguyen.herokuapp.com/portfolio/' target='_blank') current portfolio site], where many of my older projects live for now.<br>
 
                 #contact
                     span(id='contact-me') Contact me!
-
-                ul(id='social-media-links')
-                    li(class='social-media-nav-item')
-                        a(href='https://github.com/chautnguyen' class='social-media-link' target='_blank') GitHub
-                    li(class='social-media-nav-item')
-                        a(href='https://linkedin.com/in/chau-nguyen-05aa44129' class='social-media-link' target='_blank') LinkedIn
                 
+                #social-media
+                    ul(id='social-media-links')
+                        li(class='social-media-nav-item')
+                            a(href='https://github.com/chautnguyen' class='social-media-link' target='_blank') GitHub
+                        li(class='social-media-nav-item')
+                            a(href='https://linkedin.com/in/chau-nguyen-05aa44129' class='social-media-link' target='_blank') LinkedIn
+                        li(class='social-media-nav-item')
+                            a(id='reveal' href='#' class='social-media-link' target='_blank') Projects Summary
+                
+                script(inline type='text/javascript' src='lib/fetch-2.0.2.min.js')
                 script(inline type='text/javascript' src='lib/clipboard.min.js')
                 script(inline type='text/javascript' src='js/index.js')
