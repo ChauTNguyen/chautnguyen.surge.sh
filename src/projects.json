@@ -1,0 +1,49 @@
+{
+    "projects": [
+        {
+            "name": "Yelp with Weather",
+            "desc": "A full-stack web application where users can search for businesses near them along with the weather associated with the results.",
+            "src": "https://github.com/ChauTNguyen/Yelp-With-Weather-Public",
+            "demo": "https://yelp-with-weather.herokuapp.com"
+        },
+        {
+            "name": "Watson Subtitles",
+            "desc": "Currently working on a program that accurately generates unobtrusive subtitles for videos and audio files using IBM Bluemix's Speech to Text service.",
+            "src": "",
+            "demo": ""
+        },
+        {
+            "name": "Django Gradebook",
+            "desc": "A gradebook application I created for the purpose of learning how to create larger web applications.",
+            "src": "https://github.com/ChauTNguyen/Django-Gradebook",
+            "demo": "https://cnguyen.herokuapp.com/portfolio/2/"
+        },
+        {
+            "name": "My Workspaces",
+            "desc": "A hackathon project I was the primary developer of. The idea was to make an ERP-like software that combines a chat server like Slack with workspace necessities such as docs, calendar, and tasks.",
+            "src": "https://github.com/Hack-Poly2017/my-workspaces",
+            "demo": ""
+        },
+        {
+            "name": "Frontend Projects",
+            "desc": "Created & recreated many websites from scratch w/ & w/o libraries. Implemented many modern frontend designs and components.",
+            "src": "https://github.com/ChauTNguyen/Front-End-Projects",
+            "demo": [
+                "http://touche-test.surge.sh/",
+                "http://50years.rudolfheltzel.surge.sh/"
+            ]
+        },
+        {
+            "name": "Flask Portfolio & Blog",
+            "desc": "My old web application I created for the purposes of creating a minimal blog engine and portfolio.",
+            "src": "https://github.com/ChauTNguyen/Blog_and_Portfolio_Public",
+            "demo": "https://cnguyen.herokuapp.com/"
+        },
+        {
+            "name": "SF Crime Map",
+            "desc": "A simple web application that plots all recorded crime incidents within San Francisco. Connected with a backend that allows filtering of data.",
+            "src": "https://github.com/ChauTNguyen/sf-crime-viewer",
+            "demo": "https://sf-crime-viewer.herokuapp.com"
+        }
+    ]
+}

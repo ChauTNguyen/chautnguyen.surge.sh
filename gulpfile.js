@@ -37,6 +37,11 @@ gulp.task('copy_lib_assets', function() {
         .pipe(gulp.dest('./pre-build/lib/'));
 });
 
+gulp.task('move_json', function() {
+    return gulp.src('projects.json', { cwd: 'src' })
+        .pipe(gulp.dest('./dist'));
+})
+
 gulp.task('inlinesource', ['pugify', 'copy_lib_assets'], function() {
     return gulp.src('./pre-build/index.html')
         .pipe(inlinesource())
@@ -45,6 +50,6 @@ gulp.task('inlinesource', ['pugify', 'copy_lib_assets'], function() {
 
 gulp.task('default', function() {
     gulp.watch('src/**/*', [
-        'sass_css_minify', 'js_minify', 'pugify', 'copy_lib_assets', 'inlinesource'
+        'sass_css_minify', 'js_minify', 'pugify', 'copy_lib_assets', 'inlinesource', 'move_json'
     ]);
 });
