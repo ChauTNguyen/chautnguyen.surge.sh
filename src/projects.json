@@ -9,18 +9,18 @@
         {
             "name": "Watson Subtitles",
             "desc": "Currently working on a program that accurately generates unobtrusive subtitles for videos and audio files using IBM Bluemix's Speech to Text service.",
-            "src": "",
+            "src": "https://google.com/",
             "demo": ""
         },
         {
             "name": "Django Gradebook",
-            "desc": "A gradebook application I created for the purpose of learning how to create larger web applications.",
+            "desc": "A large gradebook application intended to provide teachers with many features that would make their workflow easier. The teachers can do all sorts of things.",
             "src": "https://github.com/ChauTNguyen/Django-Gradebook",
             "demo": "https://cnguyen.herokuapp.com/portfolio/2/"
         },
         {
             "name": "My Workspaces",
-            "desc": "A hackathon project I was the primary developer of. The idea was to make an ERP-like software that combines a chat server like Slack with workspace necessities such as docs, calendar, and tasks.",
+            "desc": "A hackathon project I was the primary developer of. It's a mockup of an ERP-like software that combines a chat UI with workspace necessities such as docs and tasks.",
             "src": "https://github.com/Hack-Poly2017/my-workspaces",
             "demo": ""
         },
@@ -35,7 +35,7 @@
         },
         {
             "name": "Flask Portfolio & Blog",
-            "desc": "My old web application I created for the purposes of creating a minimal blog engine and portfolio.",
+            "desc": "My old web application I created for the purposes of creating a minimal blog engine and portfolio. Wrote code to automatically generate code, blog posts, and tags.",
             "src": "https://github.com/ChauTNguyen/Blog_and_Portfolio_Public",
             "demo": "https://cnguyen.herokuapp.com/"
         },

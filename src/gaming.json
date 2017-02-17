@@ -1,0 +1,22 @@
+{
+    "achievements": [
+        {
+            "name": "Starcraft 2",
+            "desc": "Achieved Masters (top 2% of active ranked playerbase) when I was 15 and consistently kept it for five seasons.",
+            "src": "",
+            "demo": ""
+        },
+        {
+            "name": "League of Legends",
+            "desc": "Achieved Challenger (top 0.02% of active ranked playerbase) multiple times and played in the competitive scene during my late teen years.",
+            "src": "",
+            "demo": ""
+        },
+        {
+            "name": "Overwatch",
+            "desc": "Currently practicing to achieve a high ranking. I'm only playing one hero though right now though. :)",
+            "src": "",
+            "demo": ""
+        }
+    ]
+}

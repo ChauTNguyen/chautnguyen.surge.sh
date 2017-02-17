@@ -38,7 +38,7 @@ gulp.task('copy_lib_assets', function() {
 });
 
 gulp.task('move_json', function() {
-    return gulp.src('projects.json', { cwd: 'src' })
+    return gulp.src('*.json', { cwd: 'src' })
         .pipe(gulp.dest('./dist'));
 })
 

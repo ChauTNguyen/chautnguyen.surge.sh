@@ -14,11 +14,27 @@ html(lang="en")
 
         link(inline rel='stylesheet' href='lib/fira-custom.css')
         link(inline rel='stylesheet' href='lib/normalize.min.css')
+        link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
         link(inline rel='stylesheet' href='css/main.css')
     body
+        a(id='reveal' href='#') <i class="fa fa-arrow-down" aria-hidden="true"></i>
         #projects
-                div(id='close-curtains')
+                a(id='close-curtains' href='#') <i class="fa fa-arrow-up" aria-hidden="true"></i>
                 #projects-strat
+                    ul(id='filter-projects')
+                        li
+                            a(href='#' id='projectz' class='filter-link')
+                                i(class='fa fa-star') &nbsp;projects
+                        li
+                            a(href='#' id='opensource' class='filter-link')
+                                i(class='fa fa-group') &nbsp;open source
+                        li
+                            a(href='#' id='uni-projects' class='filter-link')
+                                i(class='fa fa-university') &nbsp;uni projects
+                        li
+                            a(href='#' id='gaming' class='filter-link')
+                                i(class='fa fa-gamepad') &nbsp;gaming
+                    h1(id='grand-title')
                     ul(id='projects-container')
         #main-wrapper.fade-in
             #main-wrapper-content
@@ -40,11 +56,11 @@ html(lang="en")
                 #social-media
                     ul(id='social-media-links')
                         li(class='social-media-nav-item')
-                            a(href='https://github.com/chautnguyen' class='social-media-link' target='_blank') GitHub
+                            a(href='https://github.com/chautnguyen' class='social-media-link' target='_blank') <i class="fa fa-github" aria-hidden="true"></i>
                         li(class='social-media-nav-item')
-                            a(href='https://linkedin.com/in/chau-nguyen-05aa44129' class='social-media-link' target='_blank') LinkedIn
+                            a(href='https://linkedin.com/in/chau-nguyen-05aa44129' class='social-media-link' target='_blank') <i class="fa fa-linkedin" aria-hidden="true"></i>
                         li(class='social-media-nav-item')
-                            a(id='reveal' href='#' class='social-media-link' target='_blank') Projects Summary
+                            a(href='https://chautnguyen.github.io' class='social-media-link' target='_blank') <i class="fa fa-rss" aria-hidden="true"></i>
                 
                 script(inline type='text/javascript' src='lib/fetch-2.0.2.min.js')
                 script(inline type='text/javascript' src='lib/clipboard.min.js')

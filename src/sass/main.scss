@@ -50,6 +50,13 @@ a:hover,
     margin-right: 1em;
 }
 
+#reveal, #close-curtains {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1em;
+}
+
 #name {
     color: $yellow;
 }
@@ -97,10 +104,12 @@ a:hover,
 .social-media-nav-item {
     display: inline-block;
     padding: 5px;
+    margin: 0 0.5em;
 }
 
 .social-media-link {
     display: block;
+    font-size: 1em;
 }
 
 #projects {
@@ -119,6 +128,10 @@ a:hover,
     transform: translate(0, 100%);
 }
 
+#show-projects #close-curtains {
+    z-index: 99999;
+}
+
 #show-projects {
 }
 
@@ -131,9 +144,10 @@ a:hover,
 #projects-container {
     color: black;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
-    padding: 0;
+    padding: 10px 0 0 0;
     margin: 0;
     position: relative;
 }
@@ -148,25 +162,40 @@ a:hover,
     // flex-wrap: wrap;
 }
 
-#close-curtains {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    border: 1px dashed black;    
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    z-index: 1000000;
+#filter-projects {
+    padding-top: 10px;
+    margin: 0;
+}
+
+#close-curtains, .filter-link {
+    color: black;
+}
+
+#close-curtains:hover, .filter-link:hover {
+    color: red !important;
+}
+
+#close-curtains:visited, .filter-link:visited {
+    color: black;
+}
+
+#grand-title {
+    text-align: center;
+    color: black;
 }
 
 .project {
+    display: inline-block; // prevent collapsing margins
     border: 0.5px dashed;
     padding: 1em;
-    margin: 2em;
+    margin: 1em 1.5em; // this makes my flex nice
 }
 
 .project-col {
+    flex: 1;
+}
+
+.project-row {
     flex: 1;
 }
 

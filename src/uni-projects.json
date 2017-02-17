@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "name": "None so far!",
+            "desc": "Will be in university this Fall. sdfgdsfgdfsgfdgdsgdsfgdsgsdfgsdfgsdgfgd",
+            "src": "",
+            "demo": ""
+        },
+        {
+            "name": "Test1",
+            "desc": "lame bug! lame bug! lame bug! lame bug! asdfasfasfdsadfasdfasdfasdfasdfasdfasdfasdfasdf",
+            "src": "",
+            "demo": ""
+        },
+        {
+            "name": "Test2",
+            "desc": "lame bug! lame bug! lame bug! lame bug!sadfasdfasfdafsdfsadfsadfsafd",
+            "src": "",
+            "demo": ""
+        }
+    ]
+}
