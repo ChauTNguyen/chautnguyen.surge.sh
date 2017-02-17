@@ -132,10 +132,6 @@ a:hover,
     z-index: 99999;
 }
 
-#show-projects {
-}
-
-
 #projects-strat {
     min-height: 100%;
     background-color: white;
@@ -155,11 +151,6 @@ a:hover,
 #show-projects #main-wrapper {
     opacity: 0;
     transition: 0.5s;
-}
-
-.projects-row {
-    // display: flex;
-    // flex-wrap: wrap;
 }
 
 #filter-projects {
@@ -195,16 +186,8 @@ a:hover,
     flex: 1;
 }
 
-.project-row {
-    flex: 1;
-}
-
 .project-title {
     color: $alizarin;
-}
-
-.project-desc {
-
 }
 
 .project-permalink {
