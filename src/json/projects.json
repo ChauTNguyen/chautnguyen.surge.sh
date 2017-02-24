@@ -8,13 +8,13 @@
         },
         {
             "name": "Watson Subtitles",
-            "desc": "Currently working on a program that accurately generates unobtrusive subtitles for videos and audio files using IBM Bluemix's Speech to Text service.",
-            "src": "https://google.com/",
+            "desc": "Currently working on a program that accurately generates unobtrusive subtitles for videos and audio files using IBM Bluemix's Speech to Text service. Idea originated during a hackathon.",
+            "src": "",
             "demo": ""
         },
         {
             "name": "Django Gradebook",
-            "desc": "A large gradebook application intended to provide teachers with many features that would make their workflow easier. The teachers can do all sorts of things.",
+            "desc": "A large gradebook web app intended to provide teachers with many features that would make their workflow easier. I focused on making the UI and UX simple, but great.",
             "src": "https://github.com/ChauTNguyen/Django-Gradebook",
             "demo": "https://cnguyen.herokuapp.com/portfolio/2/"
         },
@@ -35,13 +35,13 @@
         },
         {
             "name": "Flask Portfolio & Blog",
-            "desc": "My old web application I created for the purposes of creating a minimal blog engine and portfolio. Wrote code to automatically generate code, blog posts, and tags.",
+            "desc": "My old web app I created for the purposes of creating a minimal blog engine and portfolio. Wrote code to automatically generate code, blog posts, and tags.",
             "src": "https://github.com/ChauTNguyen/Blog_and_Portfolio_Public",
             "demo": "https://cnguyen.herokuapp.com/"
         },
         {
             "name": "SF Crime Map",
-            "desc": "A simple web application that plots all recorded crime incidents within San Francisco. Connected with a backend that allows filtering of data.",
+            "desc": "A simple web app that plots all recorded crime incidents within San Francisco. Connected with a backend that allows filtering of data.",
             "src": "https://github.com/ChauTNguyen/sf-crime-viewer",
             "demo": "https://sf-crime-viewer.herokuapp.com"
         }

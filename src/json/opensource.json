@@ -1,0 +1,22 @@
+{
+    "contributions": [
+        {
+            "name": "geometry",
+            "desc": "Active contributor; Fixed various bugs, improved documentation, and tidied up code on my own.",
+            "src": "",
+            "demo": ""
+        },
+        {
+            "name": "hackIDE",
+            "desc": "Added integration tests (Selenium) covering the basic, core functionality of a Django web app.",
+            "src": "",
+            "demo": ""
+        },
+        {
+            "name": "babel",
+            "desc": "Minor contributor; Updated tests and tidied up code & files on the latest branch (v7.0).",
+            "src": "",
+            "demo": ""
+        }
+    ]
+}

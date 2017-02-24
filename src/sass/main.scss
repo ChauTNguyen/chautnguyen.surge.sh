@@ -53,6 +53,15 @@ a:hover,
 #reveal, #close-curtains {
     position: absolute;
     top: 0;
+}
+
+#reveal {
+    right: 0;
+    font-size: 2em;
+    margin: 25px;
+}
+
+#close-curtains {
     left: 0;
     margin: 1em;
 }
@@ -162,12 +171,33 @@ a:hover,
     color: black;
 }
 
-#close-curtains:hover, .filter-link:hover {
-    color: red !important;
+#close-curtains:hover {
+    color: white;
+    border: 1px dashed black;
 }
 
 #close-curtains:visited, .filter-link:visited {
     color: black;
+}
+
+#projectz:hover {
+    color: yellowgreen;
+}
+
+#opensource:hover {
+    color: darkslateblue;
+}
+
+#uni-projects:hover {
+    color: seagreen;
+}
+
+#code-practice:hover {
+    color: darkviolet;
+}
+
+#gaming:hover {
+    color: red;
 }
 
 #grand-title {
@@ -180,6 +210,7 @@ a:hover,
     border: 0.5px dashed;
     padding: 1em;
     margin: 1em 1.5em; // this makes my flex nice
+    min-width: 275px; // make it look nice!
 }
 
 .project-col {
@@ -206,6 +237,14 @@ a:hover,
 
 .flash {
     animation: 2s flash infinite;
+}
+
+.filter-link {
+    text-decoration: none;
+}
+
+.filter-link i {
+    font-style: normal;
 }
 
 @keyframes flash {

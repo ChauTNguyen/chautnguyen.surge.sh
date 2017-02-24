@@ -59,25 +59,31 @@ function buildHeader() {
 }
 
 function pullProjects() {
-    return fetch('projects.json', buildHeader()).then(function (res) {
+    return fetch('json/projects.json', buildHeader()).then(function (res) {
         return res.json();
     });
 }
 
 function pullContributions() {
-    return fetch('opensource.json', buildHeader()).then(function (res) {
+    return fetch('json/opensource.json', buildHeader()).then(function (res) {
         return res.json();
     });
 }
 
 function pullUniProjects() {
-    return fetch('uni-projects.json', buildHeader()).then(function (res) {
+    return fetch('json/uni-projects.json', buildHeader()).then(function (res) {
+        return res.json();
+    });
+}
+
+function pullCodeStuffs() {
+    return fetch('json/code-stuffs.json', buildHeader()).then(function (res) {
         return res.json();
     });
 }
 
 function pullGaming() {
-    return fetch('gaming.json', buildHeader()).then(function (res) {
+    return fetch('json/gaming.json', buildHeader()).then(function (res) {
         return res.json();
     });
 }
@@ -127,10 +133,10 @@ function typeOf(value) {
     return s;
 }
 
-linkIDs = ['projectz', 'opensource', 'uni-projects', 'gaming'];
-pullFns = [pullProjects, pullContributions, pullUniProjects, pullGaming];
-secTitle = ['Projects', 'Contributions', 'Uni Projects', 'Gaming'];
-jsonKey = ['projects', 'contributions', 'projects', 'achievements'];
+linkIDs = ['projectz', 'opensource', 'uni-projects', 'code-practice', 'gaming'];
+pullFns = [pullProjects, pullContributions, pullUniProjects, pullCodeStuffs, pullGaming];
+secTitle = ['Projects', 'Contributions', 'Uni Projects', 'Code', 'Gaming'];
+jsonKey = ['projects', 'contributions', 'projects', 'accounts', 'achievements'];
 
 for (var z = 0; z < pullFns.length; ++z) {
     // Closures!!

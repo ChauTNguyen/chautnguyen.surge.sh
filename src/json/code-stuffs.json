@@ -1,0 +1,22 @@
+{
+    "accounts": [
+        {
+            "name": "Codewars",
+            "desc": "Currently, I'm working on tackling a HackReactor interview. One (loose) requirement was to be able to solve medium-level Codewars problems. Here is a link to the collection of all my solutions as well as my Codewars profile.",
+            "src": "https://github.com/ChauTNguyen/Codewars",
+            "demo": "https://www.codewars.com/users/ChauTNguyen"
+        },
+        {
+            "name": "HackerRank",
+            "desc": "Nunc quis tempus enim. Praesent sodales vehicula eros, quis ultricies lectus malesuada quis. Curabitur ac lectus dictum, scelerisque ligula at, feugiat felis.",
+            "src": "",
+            "demo": ""
+        },
+        {
+            "name": "Leetcode",
+            "desc": "Suspendisse vitae velit aliquam, maximus libero in, condimentum tortor. Vivamus et turpis pulvinar massa facilisis rutrum a quis sapien. Vestibulum convallis, ipsum eleifend bibendum tempor, purus turpis iaculis lectus, id dictum nisl ante id libero.",
+            "src": "",
+            "demo": ""
+        }
+    ]
+}
