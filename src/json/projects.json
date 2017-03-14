@@ -1,6 +1,12 @@
 {
     "projects": [
         {
+            "name": "OneTricks",
+            "desc": "A simple web application centered around a minimal, yet effective UX made for a game called League of Legends. Received many users in the first few days deployed so far.",
+            "src": "https://www.reddit.com/r/leagueoflegends/comments/5x1c5c/hi_i_made_a_small_website_to_compile_a_list_of/",
+            "demo": "http://www.onetricks.net"
+        },
+        {
             "name": "Yelp with Weather",
             "desc": "A full-stack web application where users can search for businesses near them along with the weather associated with the results.",
             "src": "https://github.com/ChauTNguyen/Yelp-With-Weather-Public",
@@ -17,12 +23,6 @@
             "desc": "A large gradebook web app intended to provide teachers with many features that would make their workflow easier. I focused on making the UI and UX simple, but great.",
             "src": "https://github.com/ChauTNguyen/Django-Gradebook",
             "demo": "https://cnguyen.herokuapp.com/portfolio/2/"
-        },
-        {
-            "name": "My Workspaces",
-            "desc": "A hackathon project I was the primary developer of. It's a mockup of an ERP-like software that combines a chat UI with workspace necessities such as docs and tasks.",
-            "src": "https://github.com/Hack-Poly2017/my-workspaces",
-            "demo": ""
         },
         {
             "name": "Frontend Projects",

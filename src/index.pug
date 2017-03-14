@@ -5,10 +5,10 @@ html(lang="en")
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        meta(name='author', content='Chau Nguyen')
-        meta(name='description', content='Chau Nguyen\'s personal site.')
+        meta(name='author', content='Chau The Nguyen')
+        meta(name='description', content='Chau The Nguyen\'s personal site.')
 
-        title Chau | Home
+        title Chau The Nguyen | Home
 
         link(rel='icon' href='favicon.ico' type='image/x-icon')
 
@@ -20,33 +20,36 @@ html(lang="en")
         a(id='reveal' href='#')
             i(class='icon-code flash')
         #projects
+            #projects-menu
                 a(id='close-curtains' href='#')
                     i(class='icon-up-big')
-                #projects-strat
-                    ul(id='filter-projects')
-                        li
-                            a(href='#' id='projectz' class='filter-link')
-                                i(class='icon-star') &nbsp;projects
-                        li
-                            a(href='#' id='opensource' class='filter-link')
-                                i(class='icon-users') &nbsp;open source
-                        li
-                            a(href='#' id='uni-projects' class='filter-link')
-                                i(class='icon-bank') &nbsp;uni projects
-                        li
-                            a(href='#' id='code-practice' class='filter-link')
-                                i(class='icon-code') &nbsp;code stuffs
-                        li
-                            a(href='#' id='gaming' class='filter-link')
-                                i(class='icon-gamepad') &nbsp;gaming
-                    h1(id='grand-title')
-                    ul(id='projects-container')
+                ul(id='filter-projects')
+                    li(class='filter-projects-item')
+                        a(href='#' id='projectz' class='filter-link')
+                            i(class='icon-star') &nbsp;projects
+                    li(class='filter-projects-item')
+                        a(href='#' id='opensource' class='filter-link')
+                            i(class='icon-users') &nbsp;open source
+                    li(class='filter-projects-item')
+                        a(href='#' id='hackathons' class='filter-link')
+                            i(class='icon-bank') &nbsp;hackathon projects
+                    li(class='filter-projects-item')
+                        a(href='#' id='uni-projects' class='filter-link')
+                            i(class='icon-bank') &nbsp;uni projects
+                    li(class='filter-projects-item')
+                        a(href='#' id='code-practice' class='filter-link')
+                            i(class='icon-code') &nbsp;code stuffs
+                    li(class='filter-projects-item')
+                        a(href='#' id='gaming' class='filter-link')
+                            i(class='icon-gamepad') &nbsp;gaming
+            h1(id='grand-title')
+            ul(id='projects-container')
         #main-wrapper.fade-in
-            #main-wrapper-content
-                h1(id='name' class='flash') Chau Nguyen
+            #main-wrapper-content <!-- for special positioning (see media query) -->
+                h1(id='name' class='flash') Chau The Nguyen
                 .content-wrapper
                     p.
-                        3rd year #[span(class='yellow') CS] major @ OCC #[span(class='yellow') &#8658] Uni Fall 2017<br><br>#[span(class='light-red') Python], #[span(class='light-red') JavaScript], & #[span(class='light-red') coffee] lover.<br><br>I aspire to be a frontend developer working with JavaScript technologies such as React, Angular, and Ionic.<br><br>
+                        3rd year #[span(class='yellow') CS] major @ OCC #[span(class='yellow') &#8658] Uni Fall 2017<br><br>#[span(class='light-red') Python], #[span(class='light-red') JavaScript], & #[span(class='light-red') coffee] lover.<br><br>I aspire to be a frontend developer working with JavaScript technologies such as React, Vue, Angular, and Ionic.<br><br>
                         Currently, I like making & recreating websites that are:
                     ul(class='website-skills')
                         li(class='website-skills-item') #[span(class='red bold-italic') responsive] on every platform, screen size, & orientation
@@ -54,10 +57,8 @@ html(lang="en")
                         li(class='website-skills-item') #[span(class='red bold-italic') lightweight] and loads #[span(class='red bold-italic') fast] on all devices
                     p.
                         such as #[a(href='http://50years.rudolfheltzel.surge.sh/' target='_blank') this] and #[a(href='http://touche-test.surge.sh/' target='_blank') this]. #[a(href='https://github.com/ChauTNguyen/Front-End-Projects' target='_blank') All my front-end projects can be found here].<br><br>Click on the code icon on the top right corner of this site to view the rest of my favorite projects and my achievements. You can also visit my #[a(href='https://cnguyen.herokuapp.com/portfolio/' target='_blank') old portfolio site] if you want.<br>
-
                 #contact
                     span(id='contact-me') Contact me!
-                
                 #social-media
                     ul(id='social-media-links')
                         li(class='social-media-nav-item')
@@ -67,6 +68,6 @@ html(lang="en")
                         li(class='social-media-nav-item')
                             a(href='https://chautnguyen.github.io' class='social-media-link' target='_blank') <i class="icon-rss" aria-hidden="true"></i>
                 
-                script(inline type='text/javascript' src='lib/fetch-2.0.2.min.js')
-                script(inline type='text/javascript' src='lib/clipboard.min.js')
-                script(inline type='text/javascript' src='js/index.js')
+        script(inline type='text/javascript' src='lib/fetch-2.0.2.min.js')
+        script(inline type='text/javascript' src='lib/clipboard.min.js')
+        script(inline type='text/javascript' src='js/index.js')

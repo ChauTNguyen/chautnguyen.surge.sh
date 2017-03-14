@@ -1,0 +1,22 @@
+{
+    "hackathons": [
+        {
+            "name": "I'd like to Roomba Roomba",
+            "desc": "Developed at HackTech 2017. My group members focused on creating a voice interface for the programmable iRobot Roomba while I focused on developing the web interface. This web interface would be able to display data from every sensor of the robot, and allows the user full directional control of the robot.",
+            "src": "https://github.com/campionfellin/hacktech",
+            "demo": "https://devpost.com/software/i-like-to-roomba-roomba"
+        },
+        {
+            "name": "My Workspaces",
+            "desc": "Developed at HackPoly 2017. A hackathon project I was the primary developer of. It's a mockup of an ERP-like software that combines a chat UI with workspace necessities such as docs and tasks.",
+            "src": "https://github.com/Hack-Poly2017/my-workspaces",
+            "demo": "https://devpost.com/software/my-workspaces"
+        },
+        {
+            "name": "Watson Subtitles",
+            "desc": "Developed at SBHacks III. I worked on the simple web interface.",
+            "src": "",
+            "demo": "https://devpost.com/software/watson-autosubber"
+        }
+    ]
+}
