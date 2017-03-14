@@ -60,7 +60,7 @@ function buildHeader() {
 
 function JsonPuller() {
     this.jsonPath = 'json/';
-    this.files = ['projects', 'opensource', 'hackathons', 'uni-projects', 'code-stuffs', 'gaming'];
+    this.files = ['projects', 'opensource', 'hackathons', 'uni-projects', 'code-practice', 'gaming'];
 }
 
 JsonPuller.prototype.getJson = function (index) {
@@ -103,6 +103,7 @@ function appendChildren(parent, children) {
 
 function typeOf(value) {
     var s = typeof value;
+
     if (s === 'object') {
         if (value) {
             if (value instanceof Array) {
@@ -112,24 +113,26 @@ function typeOf(value) {
             s = 'null';
         }
     }
+
     return s;
 }
 
-var linkIDs = ['projectz', 'opensource', 'hackathons', 'uni-projects', 'code-practice', 'gaming'];
-var secTitle = ['Projects', 'Contributions', 'Hackathon Projects', 'Uni Projects', 'Code', 'Gaming'];
-var jsonKey = ['projects', 'contributions', 'hackathons', 'projects', 'accounts', 'achievements'];
+var jp = new JsonPuller();
+var projectIDs = ['projectz', 'opensource', 'hackathons', 'uni-projects', 'code-practice', 'gaming'];
+var secTitles = ['Projects', 'Contributions', 'Hackathon Projects', 'Uni Projects', 'Code', 'Gaming'];
+var jsonKeys = ['projects', 'contributions', 'hackathons', 'projects', 'accounts', 'achievements'];
 
-for (var z = 0; z < linkIDs.length; ++z) {
+for (var z = 0; z < projectIDs.length; ++z) {
     // Closures!!
-    document.getElementById(linkIDs[z]).onclick = function (z) {
-        return function () {
+    document.getElementById(projectIDs[z]).onclick = function (z) {
+        return function () { // TODO: Implementing caching.
             jp.getJson(z).then(function (r) {
                 projectsContainer.innerHTML = '';
 
                 var projectsBG = document.getElementById('projects');
 
-                document.getElementById('grand-title').innerHTML = secTitle[z];
-                var items = r[jsonKey[z]];
+                document.getElementById('grand-title').innerHTML = secTitles[z];
+                var items = r[jsonKeys[z]];
 
                 // TODO: Ugh, the order gets messed up, but this will do for now.
                 for (var i = 0; i < 2; ++i) {
