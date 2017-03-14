@@ -58,34 +58,16 @@ function buildHeader() {
     return init;
 }
 
-function pullProjects() {
-    return fetch('json/projects.json', buildHeader()).then(function (res) {
-        return res.json();
-    });
+function JsonPuller() {
+    this.jsonPath = 'json/';
+    this.files = ['projects', 'opensource', 'hackathons', 'uni-projects', 'code-stuffs', 'gaming'];
 }
 
-function pullContributions() {
-    return fetch('json/opensource.json', buildHeader()).then(function (res) {
-        return res.json();
-    });
-}
-
-function pullUniProjects() {
-    return fetch('json/uni-projects.json', buildHeader()).then(function (res) {
-        return res.json();
-    });
-}
-
-function pullCodeStuffs() {
-    return fetch('json/code-stuffs.json', buildHeader()).then(function (res) {
-        return res.json();
-    });
-}
-
-function pullGaming() {
-    return fetch('json/gaming.json', buildHeader()).then(function (res) {
-        return res.json();
-    });
+JsonPuller.prototype.getJson = function (index) {
+    return fetch(this.jsonPath + this.files[index] + '.json', buildHeader())
+        .then(function (res) {
+            return res.json();
+        });
 }
 
 function createElement(el, text, classes) {
@@ -133,29 +115,31 @@ function typeOf(value) {
     return s;
 }
 
-linkIDs = ['projectz', 'opensource', 'uni-projects', 'code-practice', 'gaming'];
-pullFns = [pullProjects, pullContributions, pullUniProjects, pullCodeStuffs, pullGaming];
-secTitle = ['Projects', 'Contributions', 'Uni Projects', 'Code', 'Gaming'];
-jsonKey = ['projects', 'contributions', 'projects', 'accounts', 'achievements'];
+var linkIDs = ['projectz', 'opensource', 'hackathons', 'uni-projects', 'code-practice', 'gaming'];
+var secTitle = ['Projects', 'Contributions', 'Hackathon Projects', 'Uni Projects', 'Code', 'Gaming'];
+var jsonKey = ['projects', 'contributions', 'hackathons', 'projects', 'accounts', 'achievements'];
 
-for (var z = 0; z < pullFns.length; ++z) {
+for (var z = 0; z < linkIDs.length; ++z) {
     // Closures!!
     document.getElementById(linkIDs[z]).onclick = function (z) {
         return function () {
-            pullFns[z]().then(function (r) {
+            jp.getJson(z).then(function (r) {
                 projectsContainer.innerHTML = '';
+
+                var projectsBG = document.getElementById('projects');
+
                 document.getElementById('grand-title').innerHTML = secTitle[z];
-                var projects = r[jsonKey[z]];
+                var items = r[jsonKey[z]];
 
                 // TODO: Ugh, the order gets messed up, but this will do for now.
                 for (var i = 0; i < 2; ++i) {
                     var colNode = createElement('div', null, ['project-col']);
 
-                    for (var j = i; j < projects.length; j += 2) {
-                        var title = projects[j]["name"];
-                        var desc = projects[j]["desc"];
-                        var src = projects[j]["src"];
-                        var demo = projects[j]["demo"];
+                    for (var j = i; j < items.length; j += 2) {
+                        var title = items[j]["name"];
+                        var desc = items[j]["desc"];
+                        var src = items[j]["src"];
+                        var demo = items[j]["demo"];
 
                         if (title && desc) {
                             var node = createElement('li', null, ['project', 'fade-in']);
@@ -209,4 +193,4 @@ for (var z = 0; z < pullFns.length; ++z) {
         ga('create', 'UA-91759456-1', 'auto');
         ga('send', 'pageview');
     });
-})
+});
