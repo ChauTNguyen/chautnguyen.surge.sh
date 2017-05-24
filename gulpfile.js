@@ -56,10 +56,15 @@ gulp.task('inlinesource', ['pugify', 'copy_lib_assets'], function() {
 gulp.task('move_cname', function() {
     return gulp.src('CNAME', { cwd: 'src' })
         .pipe(gulp.dest('./dist'));
-})
+});
+
+gulp.task('move_bg', function() {
+    return gulp.src('img/**/*', { cwd: 'src' })
+        .pipe(gulp.dest('./dist/img'));
+});
 
 gulp.task('default', function() {
     gulp.watch('src/**/*', [
-        'sass_css_minify', 'js_minify', 'pugify', 'copy_lib_assets', 'inlinesource', 'move_json', 'move_font', 'move_cname'
+        'sass_css_minify', 'js_minify', 'pugify', 'copy_lib_assets', 'inlinesource', 'move_json', 'move_font', 'move_cname', 'move_bg'
     ]);
 });

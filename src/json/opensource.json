@@ -2,7 +2,7 @@
     "contributions": [
         {
             "name": "geometry",
-            "desc": "Active contributor; Fixed various bugs, improved documentation, and tidied up code on my own.",
+            "desc": "Active, beginner contributor; Fixed various bugs, improved documentation, and tidied up code on my own.",
             "src": "",
             "demo": ""
         },
@@ -14,7 +14,7 @@
         },
         {
             "name": "babel",
-            "desc": "Minor contributor; Updated tests and tidied up code & files on the latest branch (v7.0).",
+            "desc": "Minor, beginner contributor; Updated tests and tidied up code & files on the latest branch (v7.0).",
             "src": "",
             "demo": ""
         }

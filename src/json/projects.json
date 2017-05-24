@@ -7,16 +7,16 @@
             "demo": "http://www.onetricks.net"
         },
         {
+            "name": "kindred-api",
+            "desc": "A full-featured, comprehensive Riot League of Legends API wrapper, with built-in caching and rate-limiting, designed to be simple and consistent.",
+            "src": "https://github.com/ChauTNguyen/kindred-api",
+            "demo": "https://www.npmjs.com/package/kindred-api"
+        },
+        {
             "name": "Yelp with Weather",
             "desc": "A full-stack web application where users can search for businesses near them along with the weather associated with the results.",
             "src": "https://github.com/ChauTNguyen/Yelp-With-Weather-Public",
             "demo": "https://yelp-with-weather.herokuapp.com"
-        },
-        {
-            "name": "Watson Subtitles",
-            "desc": "Currently working on a program that accurately generates unobtrusive subtitles for videos and audio files using IBM Bluemix's Speech to Text service. Idea originated during a hackathon.",
-            "src": "",
-            "demo": ""
         },
         {
             "name": "Django Gradebook",

@@ -8,7 +8,7 @@ html(lang="en")
         meta(name='author', content='Chau The Nguyen')
         meta(name='description', content='Chau The Nguyen\'s personal site.')
 
-        title Chau The Nguyen | Home
+        title Chau T. Nguyen | Home
 
         link(rel='icon' href='favicon.ico' type='image/x-icon')
 
@@ -46,19 +46,21 @@ html(lang="en")
             ul(id='projects-container')
         #main-wrapper.fade-in
             #main-wrapper-content <!-- for special positioning (see media query) -->
-                h1(id='name' class='flash') Chau The Nguyen
+                h1(id='name' class='flash') Chau T. Nguyen
                 .content-wrapper
                     p.
-                        3rd year #[span(class='yellow') CS] major @ OCC #[span(class='yellow') &#8658] Uni Fall 2017<br><br>#[span(class='light-red') Python], #[span(class='light-red') JavaScript], & #[span(class='light-red') coffee] lover.<br><br>I aspire to be a frontend developer working with JavaScript technologies such as React, Vue, Angular, and Ionic.<br><br>
-                        Currently, I like making & recreating websites that are:
-                    ul(class='website-skills')
-                        li(class='website-skills-item') #[span(class='red bold-italic') responsive] on every platform, screen size, & orientation
-                        li(class='website-skills-item') #[span(class='red bold-italic') interactive], #[span(class='red bold-italic') unobtrusive], & #[span(class='red bold-italic') transparent] UX
-                        li(class='website-skills-item') #[span(class='red bold-italic') lightweight] and loads #[span(class='red bold-italic') fast] on all devices
+                        3rd year #[span(class='yellow') Computer Science] major @ OCC #[span(class='yellow') &#8658] UCI Fall 2017<br><br>Aspiring #[span(class='light-red') Software Engineer].<br><br>I'm currently working on a #[a(href='https://github.com/ChauTNguyen' target='_blank') few projects] (primarily refactoring and adding new features) as well as learning new languages and concepts to prepare myself for university this fall.
                     p.
-                        such as #[a(href='http://50years.rudolfheltzel.surge.sh/' target='_blank') this] and #[a(href='http://touche-test.surge.sh/' target='_blank') this]. #[a(href='https://github.com/ChauTNguyen/Front-End-Projects' target='_blank') All my front-end projects can be found here].<br><br>Click on the code icon on the top right corner of this site to view the rest of my favorite projects and my achievements. You can also visit my #[a(href='https://cnguyen.herokuapp.com/portfolio/' target='_blank') old portfolio site] if you want.<br>
+                        #[a(href='https://drive.google.com/open?id=0Bxm78eWfpvP9VkUyMEJDSWFteTg' target='_blank') Resume]
                 #contact
-                    span(id='contact-me') Contact me!
+                    //- span(id='contact-me') Contact me!
+                    span(id='contact-me')
+                        span Contact me @
+                        span &nbsp;
+                        a(href='mailto:chautnguyen96@gmail.com'
+                        id='myEmail') chautnguyen96@gmail.com
+                        span &nbsp;or&nbsp;
+                        span(id='copy-email' data-clipboard-text='chautnguyen96@gmail.com') copy my email!
                 #social-media
                     ul(id='social-media-links')
                         li(class='social-media-nav-item')
@@ -66,7 +68,7 @@ html(lang="en")
                         li(class='social-media-nav-item')
                             a(href='https://linkedin.com/in/chau-nguyen-05aa44129' class='social-media-link' target='_blank') <i class="icon-linkedin" aria-hidden="true"></i>
                         li(class='social-media-nav-item')
-                            a(href='https://chautnguyen.github.io' class='social-media-link' target='_blank') <i class="icon-rss" aria-hidden="true"></i>
+                            a(href='https://chautnguyen.github.io' class='social-media-link' target='_blank') Blog
                 
         script(inline type='text/javascript' src='lib/fetch-2.0.2.min.js')
         script(inline type='text/javascript' src='lib/clipboard.min.js')
